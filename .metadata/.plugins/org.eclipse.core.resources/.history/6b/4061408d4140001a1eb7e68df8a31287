@@ -31,22 +31,8 @@ public class MovieServices {
 		 movieRepo.save(movie);
 	}
 	
-	public void deleteMovie(Movie movie) {
-		movieRepo.delete(movie);
-	}
 	
-	public List<Movie> findByMovName(String movName) {
-		List<Movie> movies = new ArrayList<>();
-		movieRepo.findByMovname(movName).forEach(movies::add);
-		return movies;
-		
-	}
 	
-	public List<Movie> findByDirector(String director){
-		List<Movie> movies = new ArrayList<>();
-		movieRepo.findByDirector(director).forEach(movies::add);
-		return movies;
-	}
 	
 	
 	
